@@ -13,6 +13,7 @@
 		83CB47E51FC101C6002C68E6 /* GoalPost.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83CB47E31FC101C6002C68E6 /* GoalPost.xcdatamodeld */; };
 		83CB47E71FC101C6002C68E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CB47E61FC101C6002C68E6 /* Assets.xcassets */; };
 		83CB47EA1FC101C6002C68E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CB47E81FC101C6002C68E6 /* LaunchScreen.storyboard */; };
+		83CB47F61FC30A4B002C68E6 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB47F51FC30A4B002C68E6 /* GoalCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		83CB47E61FC101C6002C68E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83CB47E91FC101C6002C68E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83CB47EB1FC101C6002C68E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83CB47F51FC30A4B002C68E6 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		83CB47F21FC10281002C68E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				83CB47F51FC30A4B002C68E6 /* GoalCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83CB47F61FC30A4B002C68E6 /* GoalCell.swift in Sources */,
 				83CB47DF1FC101C6002C68E6 /* GoalsVC.swift in Sources */,
 				83CB47DD1FC101C6002C68E6 /* AppDelegate.swift in Sources */,
 				83CB47E51FC101C6002C68E6 /* GoalPost.xcdatamodeld in Sources */,
