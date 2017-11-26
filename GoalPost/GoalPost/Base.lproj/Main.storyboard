@@ -231,10 +231,10 @@
                                 </constraints>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What is your goal?" translatesAutoresizingMaskIntoConstraints="NO" id="qpc-eV-lam">
-                                <rect key="frame" x="16" y="120" width="343" height="200"/>
+                                <rect key="frame" x="16" y="120" width="343" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Dbp-a7-gNt"/>
+                                    <constraint firstAttribute="height" constant="150" id="Dbp-a7-gNt"/>
                                 </constraints>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
@@ -255,7 +255,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="J9R-yQ-wdH">
-                                <rect key="frame" x="16" y="372" width="343" height="50"/>
+                                <rect key="frame" x="16" y="322" width="343" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLD-O9-MdM">
                                         <rect key="frame" x="0.0" y="0.0" width="161.5" height="50"/>
@@ -285,7 +285,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select one:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpM-Yd-mfX">
-                                <rect key="frame" x="16" y="340" width="343" height="20"/>
+                                <rect key="frame" x="16" y="290" width="343" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="sOJ-a0-3GV"/>
                                 </constraints>
