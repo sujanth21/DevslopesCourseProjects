@@ -19,6 +19,7 @@
 		83CB47FC1FC574A8002C68E6 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB47FB1FC574A8002C68E6 /* UIViewControllerExt.swift */; };
 		83CB47FE1FCAAF34002C68E6 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB47FD1FCAAF34002C68E6 /* UIViewExt.swift */; };
 		83CC25BB1FCAB28400C6F645 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC25BA1FCAB28400C6F645 /* UIButtonExt.swift */; };
+		83CC26E41FD0D7CF00C6F645 /* FinishGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC26E31FD0D7CF00C6F645 /* FinishGoalVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		83CB47FB1FC574A8002C68E6 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		83CB47FD1FCAAF34002C68E6 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		83CC25BA1FCAB28400C6F645 /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
+		83CC26E31FD0D7CF00C6F645 /* FinishGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishGoalVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				83CB47DE1FC101C6002C68E6 /* GoalsVC.swift */,
 				83CB47F91FC55CFD002C68E6 /* CreateGoalVC.swift */,
+				83CC26E31FD0D7CF00C6F645 /* FinishGoalVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				83CB47DD1FC101C6002C68E6 /* AppDelegate.swift in Sources */,
 				83CB47FC1FC574A8002C68E6 /* UIViewControllerExt.swift in Sources */,
 				83CC25BB1FCAB28400C6F645 /* UIButtonExt.swift in Sources */,
+				83CC26E41FD0D7CF00C6F645 /* FinishGoalVC.swift in Sources */,
 				83CB47E51FC101C6002C68E6 /* GoalPost.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
