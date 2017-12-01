@@ -27,18 +27,7 @@ class GoalsVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        self.fetch { (complete) in
-            
-            if complete {
-                if goals.count >= 1 {
-                    tableView.isHidden = false
-                    
-                } else {
-                    tableView.isHidden = true
-                }
-            }
-        }
+        fetchCoreDataObjects()
         
         tableView.reloadData()
     }
@@ -50,6 +39,20 @@ class GoalsVC: UIViewController {
         }
         
         presentDetail(createGoalVC)
+    }
+    
+    func fetchCoreDataObjects() {
+        self.fetch { (complete) in
+            
+            if complete {
+                if goals.count >= 1 {
+                    tableView.isHidden = false
+                    
+                } else {
+                    tableView.isHidden = true
+                }
+            }
+        }
     }
 
 }
@@ -75,6 +78,29 @@ extension GoalsVC: UITableViewDelegate, UITableViewDataSource {
         cell.configureCell(goal: goal)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        return .none
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "DELETE") { (rowAction, indexPath) in
+            
+            self.removeGoal(atIndexPath: indexPath)
+            self.fetchCoreDataObjects()
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+        
+        deleteAction.backgroundColor = #colorLiteral(red: 0.919188261, green: 0.3199236393, blue: 0.3223813176, alpha: 1)
+        
+        return [deleteAction]
+    }
 }
 
 extension GoalsVC {
@@ -94,4 +120,20 @@ extension GoalsVC {
         }
         
     }
+    
+    func removeGoal(atIndexPath indexPath: IndexPath) {
+        
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+        
+        managedContext.delete(goals[indexPath.row])
+        
+        do {
+            try managedContext.save()
+        } catch {
+            debugPrint("Could not remove: \(error.localizedDescription)")
+        }
+    }
+    
 }
+
+
