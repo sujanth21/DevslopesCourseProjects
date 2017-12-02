@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -18,6 +19,9 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
     var currentWeather: CurrentWeather!
+    var forecast: Forecast!
+    var forecasts = [Forecast]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,10 +30,13 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.dataSource = self
         
         currentWeather = CurrentWeather()
+        
         currentWeather.downloadWeatherDetails {
-            self.updateMainUI()
-            
+            self.downloadForeCastDetails {
+                self.updateMainUI()
+            }
         }
+        
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -54,6 +61,31 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         locationLabel.text = currentWeather.cityName
         weatherTypeLabel.text = currentWeather.weatherType
         weatherImage.image = UIImage(named: currentWeather.weatherType)
+    }
+    
+    func downloadForeCastDetails(completed: @escaping DownloadComplete) {
+        
+        let forecastURL = URL(string: FORCAST_URL)!
+        
+        Alamofire.request(forecastURL).responseJSON { (response) in
+            
+            let result = response.result
+            
+            if let dict = result.value as? Dictionary<String, AnyObject> {
+                
+                if let list = dict["list"] as? [Dictionary<String, AnyObject>] {
+                    
+                    for obj in list {
+                        
+                        let forecast = Forecast(weatherDict: obj)
+                        self.forecasts.append(forecast)
+                        print(obj)
+                    }
+                }
+            }
+            
+            completed()
+        }
     }
 }
 
