@@ -22,6 +22,7 @@
 		837B32671FD3EB5400BF054F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		837B326A1FD3EB5400BF054F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		837B326C1FD3EB5400BF054F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837B32721FD3ECB700BF054F /* pokemon.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +60,7 @@
 				837B32641FD3EB5400BF054F /* Main.storyboard */,
 				837B32671FD3EB5400BF054F /* Assets.xcassets */,
 				837B32691FD3EB5400BF054F /* LaunchScreen.storyboard */,
+				837B32721FD3ECB700BF054F /* pokemon.csv */,
 				837B326C1FD3EB5400BF054F /* Info.plist */,
 			);
 			path = PokeDex;
