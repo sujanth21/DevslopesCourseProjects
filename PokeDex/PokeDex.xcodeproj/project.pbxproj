@@ -32,7 +32,7 @@
 		837B327B1FD48E4300BF054F /* csv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		837B327E1FD5DE1D00BF054F /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
 		837B32811FD5DFA300BF054F /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
-		837B32821FD5E06300BF054F /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		839CCEDD1FD7DC0300C313CC /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +114,7 @@
 		837B327F1FD5DE3000BF054F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				837B32821FD5E06300BF054F /* music.mp3 */,
+				839CCEDD1FD7DC0300C313CC /* music.mp3 */,
 				837B32811FD5DFA300BF054F /* music.png */,
 				837B327E1FD5DE1D00BF054F /* pokemon.ttf */,
 				837B32721FD3ECB700BF054F /* pokemon.csv */,
