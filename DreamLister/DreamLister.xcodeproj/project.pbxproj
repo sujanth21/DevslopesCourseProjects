@@ -13,6 +13,14 @@
 		839CCEF71FDB410200C313CC /* DreamLister.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 839CCEF51FDB410200C313CC /* DreamLister.xcdatamodeld */; };
 		839CCEF91FDB410300C313CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839CCEF81FDB410300C313CC /* Assets.xcassets */; };
 		839CCEFC1FDB410300C313CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839CCEFA1FDB410300C313CC /* LaunchScreen.storyboard */; };
+		839CCF1D1FDB46A800C313CC /* ItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CCF151FDB46A800C313CC /* ItemType+CoreDataClass.swift */; };
+		839CCF1E1FDB46A800C313CC /* ItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CCF161FDB46A800C313CC /* ItemType+CoreDataProperties.swift */; };
+		839CCF1F1FDB46A800C313CC /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CCF171FDB46A800C313CC /* Image+CoreDataClass.swift */; };
+		839CCF201FDB46A800C313CC /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CCF181FDB46A800C313CC /* Image+CoreDataProperties.swift */; };
+		839CCF211FDB46A800C313CC /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CCF191FDB46A800C313CC /* Item+CoreDataClass.swift */; };
+		839CCF221FDB46A800C313CC /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CCF1A1FDB46A800C313CC /* Item+CoreDataProperties.swift */; };
+		839CCF231FDB46A800C313CC /* Store+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CCF1B1FDB46A800C313CC /* Store+CoreDataClass.swift */; };
+		839CCF241FDB46A800C313CC /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CCF1C1FDB46A800C313CC /* Store+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		839CCEF81FDB410300C313CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		839CCEFB1FDB410300C313CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		839CCEFD1FDB410300C313CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		839CCF151FDB46A800C313CC /* ItemType+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		839CCF161FDB46A800C313CC /* ItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		839CCF171FDB46A800C313CC /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
+		839CCF181FDB46A800C313CC /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		839CCF191FDB46A800C313CC /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		839CCF1A1FDB46A800C313CC /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		839CCF1B1FDB46A800C313CC /* Store+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataClass.swift"; sourceTree = "<group>"; };
+		839CCF1C1FDB46A800C313CC /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 		839CCEED1FDB410200C313CC /* DreamLister */ = {
 			isa = PBXGroup;
 			children = (
+				839CCF131FDB455100C313CC /* Model */,
 				839CCEEE1FDB410200C313CC /* AppDelegate.swift */,
 				839CCEF01FDB410200C313CC /* ViewController.swift */,
 				839CCEF21FDB410200C313CC /* Main.storyboard */,
@@ -65,6 +82,29 @@
 				839CCEF51FDB410200C313CC /* DreamLister.xcdatamodeld */,
 			);
 			path = DreamLister;
+			sourceTree = "<group>";
+		};
+		839CCF131FDB455100C313CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				839CCF151FDB46A800C313CC /* ItemType+CoreDataClass.swift */,
+				839CCF171FDB46A800C313CC /* Image+CoreDataClass.swift */,
+				839CCF191FDB46A800C313CC /* Item+CoreDataClass.swift */,
+				839CCF1B1FDB46A800C313CC /* Store+CoreDataClass.swift */,
+				839CCF141FDB455800C313CC /* Generated */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		839CCF141FDB455800C313CC /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				839CCF161FDB46A800C313CC /* ItemType+CoreDataProperties.swift */,
+				839CCF181FDB46A800C313CC /* Image+CoreDataProperties.swift */,
+				839CCF1A1FDB46A800C313CC /* Item+CoreDataProperties.swift */,
+				839CCF1C1FDB46A800C313CC /* Store+CoreDataProperties.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +179,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839CCF1D1FDB46A800C313CC /* ItemType+CoreDataClass.swift in Sources */,
+				839CCF1E1FDB46A800C313CC /* ItemType+CoreDataProperties.swift in Sources */,
 				839CCEF11FDB410200C313CC /* ViewController.swift in Sources */,
+				839CCF1F1FDB46A800C313CC /* Image+CoreDataClass.swift in Sources */,
+				839CCF241FDB46A800C313CC /* Store+CoreDataProperties.swift in Sources */,
 				839CCEEF1FDB410200C313CC /* AppDelegate.swift in Sources */,
 				839CCEF71FDB410200C313CC /* DreamLister.xcdatamodeld in Sources */,
+				839CCF221FDB46A800C313CC /* Item+CoreDataProperties.swift in Sources */,
+				839CCF231FDB46A800C313CC /* Store+CoreDataClass.swift in Sources */,
+				839CCF211FDB46A800C313CC /* Item+CoreDataClass.swift in Sources */,
+				839CCF201FDB46A800C313CC /* Image+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
