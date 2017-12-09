@@ -22,6 +22,7 @@
 		839CCF231FDB46A800C313CC /* Store+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CCF1B1FDB46A800C313CC /* Store+CoreDataClass.swift */; };
 		839CCF241FDB46A800C313CC /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CCF1C1FDB46A800C313CC /* Store+CoreDataProperties.swift */; };
 		839CCF271FDC96E600C313CC /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CCF261FDC96E600C313CC /* MaterialView.swift */; };
+		839CCF291FDC997700C313CC /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CCF281FDC997700C313CC /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		839CCF1B1FDB46A800C313CC /* Store+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataClass.swift"; sourceTree = "<group>"; };
 		839CCF1C1FDB46A800C313CC /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		839CCF261FDC96E600C313CC /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		839CCF281FDC997700C313CC /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				839CCF261FDC96E600C313CC /* MaterialView.swift */,
+				839CCF281FDC997700C313CC /* ItemCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839CCF291FDC997700C313CC /* ItemCell.swift in Sources */,
 				839CCF1D1FDB46A800C313CC /* ItemType+CoreDataClass.swift in Sources */,
 				839CCF1E1FDB46A800C313CC /* ItemType+CoreDataProperties.swift in Sources */,
 				839CCEF11FDB410200C313CC /* MainVC.swift in Sources */,
